@@ -4,12 +4,23 @@
 
   &-wrap {
     padding: 60px 15px;
+    // styles for screen 480px
     display: flex;
-    align-items: baseline;
+    // change for baseline for screen 1200px
+    align-items: center;
+    // dell
+    justify-content: center;
+    flex-direction: column;
   }
 
   &-wrap__contacts {
-    margin-right: 70px;
+    // styles for screen 480px
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // end
+    margin-bottom: 60px;
   }
 
   &-wrap__logo {
@@ -17,9 +28,14 @@
 
     font-family: Raleway, sans-serif;
     font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
+    font-size: 24px;
+    line-height: 1.16;
     text-decoration: none;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 26px;
+      line-height: 1.19;
+    }
   }
 
   &-wrap__location {
@@ -47,7 +63,11 @@
 
 // Блок соц. сетей
 .social-networks {
-  margin-right: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
 }
 
 .social-networks__title {
