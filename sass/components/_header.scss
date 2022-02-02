@@ -1,0 +1,10 @@
+// Оформление хедера
+
+.header {
+  border-bottom: 1px solid var(--secondary-white-color);
+
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+}

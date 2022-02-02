@@ -1,0 +1,38 @@
+// Наши клиенты
+
+.clients-title {
+  text-align: center;
+}
+
+.clients-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -30px;
+  margin-left: -30px;
+
+  &__item {
+    flex-basis: calc(100% / 6 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+}
+
+.clients-list__link {
+  transition: color var(--transition-function), border var(--transition-function);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 92px;
+
+  color: var(--primary-text-color);
+
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+
+  &:hover,
+  &:focus {
+    color: var(--hover-text-color);
+    border: 1px solid var(--hover-text-color);
+  }
+}

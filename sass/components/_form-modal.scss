@@ -1,0 +1,132 @@
+// Форма
+
+.form-container {
+  width: 100%;
+  height: 100%;
+}
+
+.form-container__item {
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.form-container__icon {
+  position: absolute;
+  left: 14px;
+  transform: translateY(50%);
+
+  width: 18px;
+  height: 18px;
+
+  fill: var(--header-text-color);
+  transition: fill var(--transition-function);
+
+  .form-container__text:hover + &,
+  .form-container__text:focus + & {
+    fill: var(--hover-text-color);
+  }
+}
+
+.form-container__name {
+  display: block;
+  margin-bottom: 4px;
+
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+}
+
+.form-container__text {
+  width: 100%;
+  height: 40px;
+  padding: 14px 0px 14px 45px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: none;
+  transition: border-color var(--transition-function);
+
+  &:hover,
+  &:focus {
+    border-color: var(--hover-text-color);
+  }
+}
+
+.form-comment__area {
+  width: 100%;
+  height: 120px;
+  padding: 12px 16px;
+  margin-bottom: 0;
+  resize: none;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    border-color: var(--hover-text-color);
+  }
+
+  &::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+  }
+}
+
+.form-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.form-box__link {
+  color: var(--hover-text-color);
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.form-box__agreement {
+  margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 1.71;
+
+  & .form-box__wrap {
+    width: 16px;
+    height: 15px;
+    border: 2px solid var(--header-text-color);
+    border-radius: 2px;
+    margin-right: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.form-box__icon {
+  fill: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-box__check:checked + .form-box__wrap {
+  border: none;
+  background-color: var(--hover-text-color);
+}
+
+.form-box__check:checked + .form-box__wrap .form-box__icon {
+  fill: var(--primary-white-color);
+}
+
+.form-box__btn {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 55px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  outline: none;
+}

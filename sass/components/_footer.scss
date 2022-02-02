@@ -1,0 +1,85 @@
+// Footer
+.footer {
+  background-color: var(--footer-section-color);
+
+  &-wrap {
+    padding: 60px 15px;
+    display: flex;
+    align-items: baseline;
+  }
+
+  &-wrap__contacts {
+    margin-right: 70px;
+  }
+
+  &-wrap__logo {
+    color: var(--primary-white-color);
+
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
+  }
+
+  &-wrap__location {
+    color: var(--primary-white-color);
+
+    margin-top: 20px;
+    margin-bottom: 9px;
+
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
+
+.footer-contacts__link {
+  color: var(--lower-contacts-color);
+
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.footer-contacts__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+// Блок соц. сетей
+.social-networks {
+  margin-right: 70px;
+}
+
+.social-networks__title {
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  color: var(--primary-white-color);
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.social-networks__link {
+  transition: color var(--transition-function), background-color var(--transition-function);
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: var(--primary-white-color);
+  background-color: rgba(255, 255, 255, 0.1);
+
+  &:hover,
+  &:focus {
+    background-color: var(--hover-text-color);
+    color: var(--primary-white-color);
+  }
+
+  & + & {
+    margin-left: 10px;
+  }
+}

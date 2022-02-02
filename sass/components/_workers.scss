@@ -1,0 +1,78 @@
+// Сотрудники
+.workers {
+  background-color: var(--workers-section-color);
+
+  &-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+  }
+
+  &-list__item {
+    flex-basis: calc(100% / 4 - 30px);
+    margin-left: 30px;
+
+    background-color: var(--primary-white-color);
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.14),
+      0 2px 1px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.workers-block {
+  padding: 30px 0;
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 10px;
+
+    color: var(--header-text-color);
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+  }
+
+  &__description {
+    margin: 0;
+    margin-bottom: 16px;
+
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+  }
+}
+
+.social-list {
+  display: flex;
+  justify-content: center;
+}
+
+.social-list__item + .social-list__item {
+  margin-left: 10px;
+}
+
+.social-list__link {
+  transition: color var(--transition-function), background-color var(--transition-function);
+
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: var(--primary-text-color);
+
+  border-radius: 50%;
+
+  &:hover,
+  &:focus {
+    background-color: var(--hover-text-color);
+    color: var(--primary-white-color);
+  }
+}
+
+.social-list__icon {
+  fill: currentColor;
+}

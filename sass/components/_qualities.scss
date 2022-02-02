@@ -1,0 +1,45 @@
+// Качества
+
+.section__qualities {
+  margin-bottom: 94px;
+}
+
+.qualities {
+  &-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+  }
+
+  &-list__item {
+    flex-basis: calc(100% / 4 - 30px);
+    margin-left: 30px;
+  }
+
+  &-list__container {
+    padding: 25px 100px;
+    margin-bottom: 30px;
+
+    background-color: var(--secondary-white-color);
+  }
+
+  &-list__title {
+    margin-top: 0;
+    margin-bottom: 10px;
+
+    color: var(--header-text-color);
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+  }
+
+  &-list__description {
+    margin-top: 0;
+    margin-bottom: 0;
+
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
