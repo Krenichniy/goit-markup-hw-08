@@ -1,22 +1,48 @@
 // Качества
 
 .section__qualities {
-  margin-bottom: 94px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 94px;
+  }
 }
 
 .qualities {
   &-list {
-    display: flex;
-    flex-wrap: wrap;
     margin-left: -30px;
+
+    @media screen and (min-width: 480px) {
+      margin-bottom: -30px;
+    }
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: -30px;
+    }
   }
 
   &-list__item {
-    flex-basis: calc(100% / 4 - 30px);
+    @media screen and (min-width: 480px) {
+      margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: 768px) {
+      flex-basis: calc(100% / 2 - 30px);
+      margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      flex-basis: calc(100% / 4 - 30px);
+      margin-bottom: 0;
+    }
+
     margin-left: 30px;
   }
 
   &-list__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 25px 100px;
     margin-bottom: 30px;
 
@@ -33,6 +59,11 @@
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+      text-align: left;
+    }
   }
 
   &-list__description {
