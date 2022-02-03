@@ -3,6 +3,7 @@
 .navigation {
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 .references {
@@ -47,4 +48,15 @@
     background-color: var(--hover-text-color);
     border-radius: 2px;
   }
+}
+
+.navigation__btn {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
