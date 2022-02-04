@@ -3,7 +3,11 @@
 .navigation {
   display: flex;
   align-items: center;
-  position: relative;
+
+  width: 100%;
+  @media screen and (max-width: 767px) {
+    justify-content: space-between;
+  }
 }
 
 .references {
@@ -11,6 +15,10 @@
 
   &__item:not(:last-child) {
     margin-right: 50px;
+  }
+
+  @media screen and (max-width: 767px) {
+    display: none;
   }
 }
 
@@ -56,7 +64,18 @@
   padding: 0;
   border: none;
   background-color: transparent;
+
+  &:hover,
+  &:focus {
+    color: var(--hover-text-color);
+  }
+}
+
+.navigation__menu,
+.navigation__menu-close {
+  fill: currentColor;
+}
+
+.menu-container {
   position: absolute;
-  top: 0;
-  left: 0;
 }

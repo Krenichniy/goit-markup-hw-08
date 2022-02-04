@@ -14,8 +14,13 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  min-width: 528px;
-  min-height: 581px;
+  min-width: 450px;
+  min-height: 609px;
+
+  @media screen and(min-width: 1200px) {
+    min-width: 528px;
+    min-height: 581px;
+  }
   padding: 40px;
   transform: translate(-50%, -50%) scale(1) rotate(0);
   transition: transform 250ms;
@@ -36,8 +41,12 @@
 
     font-weight: 700;
     font-size: 20px;
-    line-height: 1.15;
+    line-height: 1.5;
     text-align: center;
+
+    @media screen and (min-width: 1200px) {
+      line-height: 1.15;
+    }
   }
 }
 

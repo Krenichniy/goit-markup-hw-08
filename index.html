@@ -31,14 +31,46 @@
             <span class="logo__part" lang="en">Web</span>Studio
           </a>
 
-          <button type="button" class="navigation__btn">
-            <svg width="40" height="40">
-              <use href="images/icons.svg#icon-menu"></use>
-              <use href="images/icons.svg#icon-close-menu"></use>
+          <button type="button" class="navigation__btn is-open" data-menu-button>
+            <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+              <use class="navigation__menu" href="images/icons.svg#icon-menu"></use>
             </svg>
           </button>
 
-          <ul class="references list visually-hidden">
+          <div class="menu-container">
+            <button type="button" class="navigation__btn is-open" data-menu-button>
+              <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                <use class="navigation__menu-close" href="images/icons.svg#icon-close-menu"></use>
+              </svg>
+            </button>
+
+            <ul class="menu-references list">
+              <li class="menu-references__item">
+                <a href="./index.html" class="menu-references__link references__link--current"
+                  >Студия</a
+                >
+              </li>
+              <li class="menu-references__item">
+                <a href="./portfolio.html" class="menu-references__link">Портфолио</a>
+              </li>
+              <li class="menu-references__item">
+                <a href="" class="menu-references__link">Контакты</a>
+              </li>
+            </ul>
+
+            <ul class="menu-contacts list">
+              <li class="menu-contacts__item">
+                <a href="mailto:info@devstudio.com" class="menu-contacts__e-mail link">
+                  info@devstudio.com</a
+                >
+              </li>
+              <li class="menu-contacts__item">
+                <a href="tel:+380961111111" class="menu-contacts__phone link"> +38 096 111 11 11</a>
+              </li>
+            </ul>
+          </div>
+
+          <ul class="references list">
             <li class="references__item">
               <a href="./index.html" class="references__link references__link--current">Студия</a>
             </li>
@@ -49,7 +81,7 @@
           </ul>
         </nav>
 
-        <div class="connect header__connect visually-hidden">
+        <div class="connect header__connect">
           <ul class="contacts list">
             <li class="contacts__item">
               <a href="mailto:info@devstudio.com" class="contacts__e-mail link">
@@ -562,8 +594,10 @@
                 <use href="images/icons.svg#icon-checked"></use>
               </svg>
             </span>
-            Соглашаюсь с рассылкой и принимаю &nbsp;
-            <a href="#" class="form-box__link">Условия договора</a>
+            <span class="form-box__text">
+              Соглашаюсь с рассылкой и принимаю &nbsp;
+              <a href="#" class="form-box__link">Условия договора</a></span
+            >
           </label>
 
           <button type="submit" class="form-box__btn button">Отправить</button>
@@ -571,6 +605,13 @@
       </div>
     </div>
 
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

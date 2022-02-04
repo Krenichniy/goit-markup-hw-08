@@ -9,6 +9,10 @@
 
 .header__connect {
   margin-left: auto;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 
 .contacts .link {
