@@ -84,38 +84,29 @@
 .form-box {
   display: flex;
   align-items: center;
-
-  @media screen and (min-width: 1200px) {
-    justify-content: center;
-  }
-  position: relative;
+  justify-content: center;
 }
 
 .form-box__text {
-  white-space: nowrap;
-}
-
-.form-box__link {
-  color: var(--hover-text-color);
   font-size: 12px;
   line-height: 1.16;
-  // white-space: nowrap;
+
+  @media screen and (min-width: 480px) {
+    white-space: nowrap;
+  }
 
   @media screen and (min-width: 1200px) {
     font-size: 14px;
     line-height: 1.71;
   }
+}
+.form-box__link {
+  color: var(--hover-text-color);
+  // white-space: nowrap;
 }
 
 .form-box__agreement {
   margin-bottom: 30px;
-  font-size: 12px;
-  line-height: 1.16;
-
-  @media screen and (min-width: 1200px) {
-    font-size: 14px;
-    line-height: 1.71;
-  }
 
   & .form-box__wrap {
     width: 16px;

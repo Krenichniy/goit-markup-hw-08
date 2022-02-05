@@ -31,45 +31,80 @@
             <span class="logo__part" lang="en">Web</span>Studio
           </a>
 
-          <button type="button" class="navigation__btn is-open" data-menu-button>
+          <!-- Мобильное меню -->
+          <button
+            type="button"
+            class="navigation__btn js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+            aria-label="Открытие мобильного меню"
+          >
             <svg width="40" height="40" aria-label="Переключатель мобильного меню">
               <use class="navigation__menu" href="images/icons.svg#icon-menu"></use>
             </svg>
           </button>
 
-          <div class="menu-container">
-            <button type="button" class="navigation__btn is-open" data-menu-button>
-              <svg width="40" height="40" aria-label="Переключатель мобильного меню">
-                <use class="navigation__menu-close" href="images/icons.svg#icon-close-menu"></use>
-              </svg>
-            </button>
+          <div class="mobile-menu-container js-menu-container">
+            <div class="menu-container container">
+              <button
+                type="button"
+                class="navigation__btn mobile-close-btn js-close-menu"
+                aria-expanded="false"
+                aria-controls="mobile-menu"
+                aria-label="Закрытие мобильного меню"
+              >
+                <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                  <use class="navigation__menu-close" href="images/icons.svg#icon-close-menu"></use>
+                </svg>
+              </button>
 
-            <ul class="menu-references list">
-              <li class="menu-references__item">
-                <a href="./index.html" class="menu-references__link references__link--current"
-                  >Студия</a
-                >
-              </li>
-              <li class="menu-references__item">
-                <a href="./portfolio.html" class="menu-references__link">Портфолио</a>
-              </li>
-              <li class="menu-references__item">
-                <a href="" class="menu-references__link">Контакты</a>
-              </li>
-            </ul>
+              <ul class="menu-references list">
+                <li class="menu-references__item">
+                  <a
+                    href="./index.html"
+                    class="menu-references__link menu-references__link--current"
+                    >Студия</a
+                  >
+                </li>
+                <li class="menu-references__item">
+                  <a href="./portfolio.html" class="menu-references__link">Портфолио</a>
+                </li>
+                <li class="menu-references__item">
+                  <a href="" class="menu-references__link">Контакты</a>
+                </li>
+              </ul>
 
-            <ul class="menu-contacts list">
-              <li class="menu-contacts__item">
-                <a href="mailto:info@devstudio.com" class="menu-contacts__e-mail link">
-                  info@devstudio.com</a
-                >
-              </li>
-              <li class="menu-contacts__item">
-                <a href="tel:+380961111111" class="menu-contacts__phone link"> +38 096 111 11 11</a>
-              </li>
-            </ul>
+              <ul class="menu-contacts list">
+                <li class="menu-contacts__item">
+                  <a href="tel:+380961111111" class="menu-contacts__phone link">
+                    +38 096 111 11 11</a
+                  >
+                </li>
+                <li class="menu-contacts__item">
+                  <a href="mailto:info@devstudio.com" class="menu-contacts__e-mail link">
+                    info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+
+              <ul class="menu-socials">
+                <li class="menu-socials__item">
+                  <a href="" class="menu-socials__link">Instagram</a>
+                </li>
+                <li class="menu-socials__item">
+                  <a href="" class="menu-socials__link">Twitter</a>
+                </li>
+                <li class="menu-socials__item">
+                  <a href="" class="menu-socials__link">Facebook</a>
+                </li>
+                <li class="menu-socials__item">
+                  <a href="" class="menu-socials__link">LinkedIn</a>
+                </li>
+              </ul>
+            </div>
           </div>
 
+          <!-- Основная навигация -->
           <ul class="references list">
             <li class="references__item">
               <a href="./index.html" class="references__link references__link--current">Студия</a>
@@ -595,7 +630,7 @@
               </svg>
             </span>
             <span class="form-box__text">
-              Соглашаюсь с рассылкой и принимаю &nbsp;
+              Соглашаюсь с рассылкой и принимаю
               <a href="#" class="form-box__link">Условия договора</a></span
             >
           </label>
