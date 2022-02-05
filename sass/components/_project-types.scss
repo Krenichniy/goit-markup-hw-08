@@ -7,6 +7,7 @@
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
+  margin-top: -15px;
   @media screen and (min-width: 768px) {
     justify-content: center;
     flex-wrap: nowrap;
@@ -17,18 +18,21 @@
     margin-bottom: 50px;
   }
 
-  &__item:not(:first-child) {
-    margin-left: 8px;
+  &__item:not(:last-child) {
+    margin-right: 8px;
   }
 
   @media screen and (max-width: 767px) {
-    &__item:nth-child(4) {
-      margin-left: 0;
-    }
-
-    &__item:nth-child(n + 4) {
+    &__item {
       margin-top: 15px;
     }
+    // &__item:nth-child(4) {
+    //   margin-left: 0;
+    // }
+
+    // &__item:nth-child(n + 4) {
+    //   margin-top: 15px;
+    // }
   }
 }
 

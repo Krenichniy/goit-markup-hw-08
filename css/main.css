@@ -1201,6 +1201,7 @@ body {
           justify-content: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-top: -15px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1220,15 +1221,12 @@ body {
   }
 }
 
-.buttons__item:not(:first-child) {
-  margin-left: 8px;
+.buttons__item:not(:last-child) {
+  margin-right: 8px;
 }
 
 @media screen and (max-width: 767px) {
-  .buttons__item:nth-child(4) {
-    margin-left: 0;
-  }
-  .buttons__item:nth-child(n + 4) {
+  .buttons__item {
     margin-top: 15px;
   }
 }
