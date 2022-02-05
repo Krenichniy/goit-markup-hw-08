@@ -232,11 +232,6 @@ body {
   }
 }
 
-.navigation__menu,
-.navigation__menu-close {
-  fill: currentColor;
-}
-
 .mobile-menu-container {
   position: fixed;
   top: 0;
