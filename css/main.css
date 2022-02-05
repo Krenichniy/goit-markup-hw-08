@@ -50,6 +50,7 @@ body {
 .container {
   padding: 0 15px;
   margin: 0 auto;
+  outline: 1px solid red;
 }
 
 @media screen and (min-width: 480px) {
@@ -147,7 +148,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 @media screen and (max-width: 767px) {
@@ -385,13 +388,24 @@ body {
 }
 
 .contacts {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  margin-left: auto;
 }
 
-.contacts__item:not(:last-child) {
-  margin-right: 50px;
+@media screen and (max-width: 767px) {
+  .contacts {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .contacts__item:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
 .header__connect {
@@ -405,15 +419,33 @@ body {
 }
 
 .contacts .link {
+  display: block;
   -webkit-transition: color var(--transition-function);
   transition: color var(--transition-function);
   color: currentColor;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 12px;
+  line-height: 1.17;
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts .link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+  }
 }
 
 .contacts .link:hover, .contacts .link:focus {
