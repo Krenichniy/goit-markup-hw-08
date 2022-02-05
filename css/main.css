@@ -218,8 +218,8 @@ body {
   padding: 0;
   border: none;
   background-color: transparent;
-  -webkit-transition: color var(--transition-function);
-  transition: color var(--transition-function);
+  -webkit-transition: fill var(--transition-function);
+  transition: fill var(--transition-function);
 }
 
 .navigation__btn:hover, .navigation__btn:focus {
