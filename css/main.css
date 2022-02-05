@@ -223,7 +223,7 @@ body {
 }
 
 .navigation__btn:hover, .navigation__btn:focus {
-  color: var(--hover-text-color);
+  fill: var(--hover-text-color);
 }
 
 @media screen and (min-width: 768px) {
